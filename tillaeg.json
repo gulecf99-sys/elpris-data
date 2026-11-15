@@ -1,0 +1,78 @@
+{
+  "opdateret": "2026-11-15",
+  "note": "Tillæg og abonnement inkl. moms for elselskabernes spotprisprodukter. Læses af Elpris-appen. Opdateres ugentligt.",
+  "elselskaber": [
+    {
+      "id": "altid",
+      "navn": "Altid Energi",
+      "produkt": "Strøm til indkøbspris",
+      "tillaeg_oere_kwh": 0.0,
+      "abonnement_kr_md": 18.0,
+      "kilde": ""
+    },
+    {
+      "id": "enkel",
+      "navn": "Enkel Energi",
+      "produkt": "enkel kvartal",
+      "tillaeg_oere_kwh": 0.0,
+      "abonnement_kr_md": 18.0,
+      "kilde": ""
+    },
+    {
+      "id": "vindstod",
+      "navn": "Vindstød",
+      "produkt": "Go'Vind",
+      "tillaeg_oere_kwh": 1.0,
+      "abonnement_kr_md": 0.0,
+      "kilde": ""
+    },
+    {
+      "id": "osmund",
+      "navn": "Osmund Energi",
+      "produkt": "Åben",
+      "tillaeg_oere_kwh": 3.1,
+      "abonnement_kr_md": 5.0,
+      "kilde": ""
+    },
+    {
+      "id": "vestforsyning",
+      "navn": "Vestforsyning",
+      "produkt": "SPOT",
+      "tillaeg_oere_kwh": 5.0,
+      "abonnement_kr_md": 15.0,
+      "kilde": ""
+    },
+    {
+      "id": "gasel",
+      "navn": "Gasel",
+      "produkt": "El til børspris + 6 øre",
+      "tillaeg_oere_kwh": 6.0,
+      "abonnement_kr_md": 0.0,
+      "kilde": ""
+    },
+    {
+      "id": "dcc",
+      "navn": "DCC Energi",
+      "produkt": "Flex",
+      "tillaeg_oere_kwh": 7.5,
+      "abonnement_kr_md": 25.0,
+      "kilde": ""
+    },
+    {
+      "id": "norlys",
+      "navn": "Norlys",
+      "produkt": "FlexEl",
+      "tillaeg_oere_kwh": 9.7,
+      "abonnement_kr_md": 29.0,
+      "kilde": ""
+    },
+    {
+      "id": "ok",
+      "navn": "OK",
+      "produkt": "Højt Forbrug",
+      "tillaeg_oere_kwh": 0.0,
+      "abonnement_kr_md": 49.0,
+      "kilde": ""
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+name: Ladestandere
+on:
+  schedule:
+    - cron: '17 */2 * * *'   # hver anden time
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**', '.github/workflows/**']
+permissions:
+  contents: write
+concurrency:
+  group: ladestandere
+  cancel-in-progress: false
+jobs:
+  hent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Hent forrige data (reserve, hvis en operatør fejler)
+        run: git fetch --depth 1 origin data && git worktree add prev FETCH_HEAD || echo "Ingen tidligere data"
+      - name: Hent ladestandere og priser
+        run: node scripts/ladestandere.mjs out prev
+      - name: Gem i data-grenen
+        run: |
+          cd out
+          git init -q -b data
+          git config user.name "elpris-bot"
+          git config user.email "elpris-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Ladestandere $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data
