@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-11-15",
+  "opdateret": "2026-11-23",
   "note": "Tillæg og abonnement inkl. moms for elselskabernes spotprisprodukter. Læses af Elpris-appen. Opdateres ugentligt.",
   "elselskaber": [
     {
@@ -8,7 +8,7 @@
       "produkt": "Strøm til indkøbspris",
       "tillaeg_oere_kwh": 0.0,
       "abonnement_kr_md": 18.0,
-      "kilde": ""
+      "kilde": "https://altidenergi.dk/prisside/"
     },
     {
       "id": "enkel",
@@ -16,7 +16,7 @@
       "produkt": "enkel kvartal",
       "tillaeg_oere_kwh": 0.0,
       "abonnement_kr_md": 18.0,
-      "kilde": ""
+      "kilde": "https://enkelenergi.dk/elaftale"
     },
     {
       "id": "vindstod",
@@ -24,7 +24,7 @@
       "produkt": "Go'Vind",
       "tillaeg_oere_kwh": 1.0,
       "abonnement_kr_md": 0.0,
-      "kilde": ""
+      "kilde": "https://www.vindstoed.dk/elaftaler"
     },
     {
       "id": "osmund",
@@ -32,7 +32,7 @@
       "produkt": "Åben",
       "tillaeg_oere_kwh": 3.1,
       "abonnement_kr_md": 5.0,
-      "kilde": ""
+      "kilde": "https://osmundenergi.dk/priser-og-gebyrer"
     },
     {
       "id": "vestforsyning",
@@ -40,7 +40,7 @@
       "produkt": "SPOT",
       "tillaeg_oere_kwh": 5.0,
       "abonnement_kr_md": 15.0,
-      "kilde": ""
+      "kilde": "https://www.vestforsyning.dk/el/bestil-el/"
     },
     {
       "id": "gasel",
@@ -64,7 +64,7 @@
       "produkt": "FlexEl",
       "tillaeg_oere_kwh": 9.7,
       "abonnement_kr_md": 29.0,
-      "kilde": ""
+      "kilde": "https://norlys.dk/el/flexel/"
     },
     {
       "id": "ok",
@@ -72,7 +72,7 @@
       "produkt": "Højt Forbrug",
       "tillaeg_oere_kwh": 0.0,
       "abonnement_kr_md": 49.0,
-      "kilde": ""
+      "kilde": "https://www.ok.dk/privat/produkter/el/bestil-ok-el/ok-el-hoejt-forbrug"
     }
   ]
 }
